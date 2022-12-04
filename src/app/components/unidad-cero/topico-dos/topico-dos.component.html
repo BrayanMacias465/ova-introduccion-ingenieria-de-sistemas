@@ -1,0 +1,27 @@
+<app-navbar [menu]="menu" [titulo]="'Estructura del Curso'" (anteriorClick)="paginaAnterior()" (siguienteClick)="paginaSiguiente()"></app-navbar>
+<div class="lab">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="mb-4">Estrucutra del curso</h1>
+      <p class="mb-4">El curso se divide en 5 unidades: </p>
+      <ol class="ms-4">
+        <li class="fw-bold">Unidad 1</li>
+            <p class="ms-4">Introducción a la ingeniería</p>
+        <li class="fw-bold">Unidad 2</li>
+            <p class="ms-4">Ingeniería de sistemas</p>
+        <li class="fw-bold">Unidad 3</li>
+            <p class="ms-4">Hardware</p>
+        <li class="fw-bold">Unidad 4</li>
+            <p class="ms-4">Derechos de autor</p>
+        <li class="fw-bold">Unidad 5</li>
+            <p class="ms-4">Software y licencias</p>
+      </ol>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center align-content-center align-items-center">
+      <div>
+        <img src="../../../../assets/image/logoIngSoft.png" width="700px">
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer (anteriorClick)="paginaAnterior()" (siguienteClick)="paginaSiguiente()"></app-footer>

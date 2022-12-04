@@ -1,0 +1,18 @@
+.footer {
+    background: #2f4050;
+    padding: 5px;
+    position: sticky;
+    bottom: 0px;
+}
+
+.button {
+    background: transparent;
+    border: 1px solid #cda869;
+    color: white;
+    font-size: 13px;
+    padding: 6px 30px;
+}
+
+.button:focus{
+    background: #cda869;
+}

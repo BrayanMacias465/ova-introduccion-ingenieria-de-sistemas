@@ -1,0 +1,21 @@
+.container-fluid {
+    background: #3a3a3a; 
+    min-height: 100vh;
+}
+
+.card-title {
+    margin-bottom: 60px;
+}
+
+.card-body {
+    padding: 70px 90px;
+}
+
+.btn {
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.container-button {
+    margin-top: 40px;
+}
