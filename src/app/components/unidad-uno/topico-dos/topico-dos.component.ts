@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-unidad-uno-topico-uno',
-  templateUrl: './topico-uno.component.html',
-  styleUrls: ['./topico-uno.component.css']
+  selector: 'app-unidad-uno-topico-dos',
+  templateUrl: './topico-dos.component.html',
+  styleUrls: ['./topico-dos.component.css']
 })
-export class UnidadUnoTopicoUnoComponent {
+export class UnidadUnoTopicoDosComponent {
   menu: any[] = [];
 
   constructor(private router: Router) {
@@ -18,10 +18,10 @@ export class UnidadUnoTopicoUnoComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas/historia-ingenieria');
+    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas/ingenieria-en-colombia');
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/bienvenido/temario');
+    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas');
   }
 }
