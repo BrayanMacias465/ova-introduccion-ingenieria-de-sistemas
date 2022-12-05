@@ -13,6 +13,6 @@
     padding: 6px 30px;
 }
 
-.button:focus{
+.button:focus, .button:hover {
     background: #cda869;
 }
