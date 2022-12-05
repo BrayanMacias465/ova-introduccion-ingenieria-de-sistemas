@@ -5,6 +5,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { UnidadCeroTopicoDosComponent } from './components/unidad-cero/topico-dos/topico-dos.component';
 import { UnidadCeroTopicoTresComponent } from './components/unidad-cero/topico-tres/topico-tres.component';
 import { UnidadCeroTopicoUnoComponent } from './components/unidad-cero/topico-uno/topico-uno.component';
+import { UnidadUnoTopicoCincoComponent } from './components/unidad-uno/topico-cinco/topico-cinco.component';
 import { UnidadUnoTopicoCuatroComponent } from './components/unidad-uno/topico-cuatro/topico-cuatro.component';
 import { UnidadUnoTopicoDosComponent } from './components/unidad-uno/topico-dos/topico-dos.component';
 import { UnidadUnoTopicoTresComponent } from './components/unidad-uno/topico-tres/topico-tres.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
     { path: '', component: UnidadUnoTopicoUnoComponent },
     { path: 'historia-ingenieria', component: UnidadUnoTopicoDosComponent },
     { path: 'ingenieria-en-colombia', component: UnidadUnoTopicoTresComponent },
-    { path: '', component: UnidadUnoTopicoCuatroComponent }
+    { path: 'cualidades-del-ingeniero', component: UnidadUnoTopicoCuatroComponent },
+    { path: 'codigo-de-etica-del-ingeniero', component: UnidadUnoTopicoCincoComponent }
   ]},
 ];
 
