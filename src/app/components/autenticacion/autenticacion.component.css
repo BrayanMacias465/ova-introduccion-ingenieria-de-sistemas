@@ -1,6 +1,9 @@
 .container-fluid {
-    background: #3a3a3a; 
+    background-image: url("https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=2309%2C1154&strip=all");
     min-height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card-title {
@@ -12,7 +15,7 @@
 }
 
 .btn {
-    background-color: #3a3a3a;
+    background-color: hsl(209, 26%, 25%);
     color: white;
 }
 
