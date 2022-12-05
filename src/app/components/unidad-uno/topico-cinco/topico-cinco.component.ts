@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-unidad-uno-topico-cuatro',
-  templateUrl: './topico-cuatro.component.html',
-  styleUrls: ['./topico-cuatro.component.css']
+  selector: 'app-unidad-uno-topico-cinco',
+  templateUrl: './topico-cinco.component.html',
+  styleUrls: ['./topico-cinco.component.css']
 })
-export class UnidadUnoTopicoCuatroComponent {
+export class UnidadUnoTopicoCincoComponent {
   menu: any[] = [];
 
   constructor(private router: Router) {
@@ -20,10 +20,10 @@ export class UnidadUnoTopicoCuatroComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas/codigo-de-etica-del-ingeniero');
+    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas');
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas/ingenieria-en-colombia');
+    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas/cualidades-del-ingeniero');
   }
 }

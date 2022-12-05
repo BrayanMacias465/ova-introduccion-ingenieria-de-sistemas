@@ -13,7 +13,9 @@ export class UnidadUnoTopicoDosComponent {
     this.menu = [
       { value: 'Tema', link: '/introduccion-ingieneria-de-sistemas' },
       { value: 'Historia de ingeniería', link: '/introduccion-ingieneria-de-sistemas/historia-ingenieria' },
-      { value: 'Ingeniería en Colombia', link: '/introduccion-ingieneria-de-sistemas/ingenieria-en-colombia' }
+      { value: 'Ingeniería en Colombia', link: '/introduccion-ingieneria-de-sistemas/ingenieria-en-colombia' },
+      { value: 'Cualidades del ingeniero', link: '/introduccion-ingieneria-de-sistemas/cualidades-del-ingeniero' },
+      { value: 'Codigo de etica del ingeniero', link: '/introduccion-ingieneria-de-sistemas/codigo-de-etica-del-ingeniero' }
     ];
   }
 
