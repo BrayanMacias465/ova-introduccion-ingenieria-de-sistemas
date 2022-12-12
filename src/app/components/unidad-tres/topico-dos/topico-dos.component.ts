@@ -29,7 +29,7 @@ export class UnidadTresTopicoDosComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores');
+    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/primera-generacion');
   }
 
   paginaAnterior(): void {

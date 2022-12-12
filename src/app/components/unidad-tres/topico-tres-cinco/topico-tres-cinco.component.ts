@@ -33,6 +33,6 @@ export class UnidadTresTopicoTresCincoComponent {
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/ingenieria-de-sistemas/Proyecto-Educativo-Institucional-PEI');
+    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/cuarta-generacion');
   }
 }

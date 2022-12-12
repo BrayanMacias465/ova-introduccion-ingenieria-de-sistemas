@@ -29,10 +29,10 @@ export class UnidadTresTopicoTresTresComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware/historia-de-los-componentes');
+    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/segunda-generacion');
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/ingenieria-de-sistemas/Proyecto-Educativo-Institucional-PEI');
+    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/cuarta-generacion');
   }
 }
