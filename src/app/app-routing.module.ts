@@ -34,7 +34,7 @@ const routes: Routes = [
   ]},
   { path: 'ingenieria-de-sistemas', children: [
     { path: '', component: UnidadDosTopicoUnoComponent },
-    { path: '¿que-es-la-ingenieria-de-sistemas?', component: UnidadDosTopicoDosComponent },
+    { path: 'que-es-la-ingenieria-de-sistemas', component: UnidadDosTopicoDosComponent },
     { path: 'campos-de-un-ingeniero-de-sistemas', component: UnidadDosTopicoTresComponent  },
     { path: 'Proyecto-Educativo-Institucional(PEI)', component: UnidadDosTopicoCuatroComponent },
     { path: 'Proyecto-Educativo-del-Programa(PEP)', component: UnidadDosTopicoCincoComponent },

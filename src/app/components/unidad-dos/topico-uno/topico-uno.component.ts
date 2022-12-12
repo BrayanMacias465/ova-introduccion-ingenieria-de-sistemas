@@ -12,7 +12,7 @@ export class UnidadDosTopicoUnoComponent {
   constructor(private router: Router) {
     this.menu = [
       { value: 'Tema', link: '/ingenieria-de-sistemas' },
-      { value: '¿Que es la ingenieria de sistemas?', link: '/ingenieria-de-sistemas/¿que-es-la-ingenieria-de-sistemas?' },
+      { value: '¿Que es la ingenieria de sistemas?', link: '/ingenieria-de-sistemas/que-es-la-ingenieria-de-sistemas' },
       { value: 'Campos de un ingeniero de sistemas', link: '/ingenieria-de-sistemas/campos-de-un-ingeniero-de-sistemas' },
       { value: 'Proyecto Educativo Institucional(PEI)', link: '/ingenieria-de-sistemas/Proyecto-Educativo-Institucional(PEI)' },
       { value: 'Proyecto Educativo del Programa(PEP)', link: '/ingenieria-de-sistemas/Proyecto-Educativo-del-Programa(PEP)' },
@@ -21,7 +21,7 @@ export class UnidadDosTopicoUnoComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/ingenieria-de-sistemas/¿que-es-la-ingenieria-de-sistemas?');
+    this.router.navigateByUrl('/ingenieria-de-sistemas/que-es-la-ingenieria-de-sistemas');
   }
 
   paginaAnterior(): void {
