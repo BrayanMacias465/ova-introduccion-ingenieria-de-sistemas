@@ -22,3 +22,7 @@
     font-size: 17px;
     font-weight: bold;
 }
+
+.lab p {
+    text-align: justify;
+}
