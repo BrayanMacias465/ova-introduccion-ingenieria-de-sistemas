@@ -23,6 +23,10 @@ import { UnidadTresTopicoOnceComponent } from './components/unidad-tres/topico-o
 import { UnidadTresTopicoSeisComponent } from './components/unidad-tres/topico-seis/topico-seis.component';
 import { UnidadTresTopicoSieteComponent } from './components/unidad-tres/topico-siete/topico-siete.component';
 import { UnidadTresTopicoTreceComponent } from './components/unidad-tres/topico-trece/topico-trece.component';
+import { UnidadTresTopicoTresCincoComponent } from './components/unidad-tres/topico-tres-cinco/topico-tres-cinco.component';
+import { UnidadTresTopicoTresCuatroComponent } from './components/unidad-tres/topico-tres-cuatro/topico-tres-cuatro.component';
+import { UnidadTresTopicoTresDosComponent } from './components/unidad-tres/topico-tres-dos/topico-tres-dos.component';
+import { UnidadTresTopicoTresTresComponent } from './components/unidad-tres/topico-tres-tres/topico-tres-tres.component';
 import { UnidadTresTopicoTresComponent } from './components/unidad-tres/topico-tres/topico-tres.component';
 import { UnidadTresTopicoUnoComponent } from './components/unidad-tres/topico-uno/topico-uno.component';
 import { UnidadUnoTopicoCincoComponent } from './components/unidad-uno/topico-cinco/topico-cinco.component';
@@ -57,7 +61,13 @@ const routes: Routes = [
   { path: 'hardware', children: [
     { path: '', component: UnidadTresTopicoUnoComponent },
     { path: 'historia-de-los-componentes', component: UnidadTresTopicoDosComponent },
-    { path: 'generaciones-de-los-computadores', component: UnidadTresTopicoTresComponent },
+    { path: 'generaciones-de-los-computadores', children: [
+      { path: 'primera-generacion', component: UnidadTresTopicoTresComponent },
+      { path: 'segunda-generacion', component: UnidadTresTopicoTresDosComponent },
+      { path: 'tercera-generacion', component: UnidadTresTopicoTresTresComponent },
+      { path: 'cuarta-generacion', component: UnidadTresTopicoTresCuatroComponent },
+      { path: 'quinta-generacion', component: UnidadTresTopicoTresCincoComponent }
+    ]},
     { path: 'tipos-de-computadoras', component: UnidadTresTopicoCuatroComponent },
     { path: 'hardware-de-Entrada', component: UnidadTresTopicoCincoComponent },
     { path: 'hardware-de-Salida', component: UnidadTresTopicoSeisComponent },

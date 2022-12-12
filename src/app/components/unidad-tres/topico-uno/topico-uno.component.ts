@@ -13,7 +13,7 @@ export class UnidadTresTopicoUnoComponent {
     this.menu = [
       { value: 'Tema',                                                link: '/hardware' },
       { value: 'Historia de los componentes',                         link: '/hardware/historia-de-los-componentes' },
-      { value: 'Generaciones de los computadores',                    link: '/hardware/generaciones-de-los-computadores' },
+      { value: 'Generaciones de los computadores',                    link: '/hardware/generaciones-de-los-computadores/primera-generacion' },
       { value: 'Tipos de computadoras',                               link: '/hardware/tipos-de-computadoras' },
       { value: 'Hardware de Entrada',                                 link: '/hardware/hardware-de-Entrada' },
       { value: 'Hardware de Salida',                                  link: '/hardware/hardware-de-Salida' },

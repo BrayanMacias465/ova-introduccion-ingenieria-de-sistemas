@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-topico-siete',
-  templateUrl: './topico-siete.component.html',
-  styleUrls: ['./topico-siete.component.css']
+  selector: 'app-topico-tres-cinco',
+  templateUrl: './topico-tres-cinco.component.html',
+  styleUrls: ['./topico-tres-cinco.component.css']
 })
-export class UnidadTresTopicoSieteComponent {
+export class UnidadTresTopicoTresCincoComponent {
   menu: any[] = [];
 
   constructor(private router: Router) {
@@ -29,10 +29,10 @@ export class UnidadTresTopicoSieteComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware/memoria-principal-y-secundaria');
+    this.router.navigateByUrl('/hardware/historia-de-los-componentes');
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/hardware/hardware-de-Salida');
+    this.router.navigateByUrl('/ingenieria-de-sistemas/Proyecto-Educativo-Institucional-PEI');
   }
 }
