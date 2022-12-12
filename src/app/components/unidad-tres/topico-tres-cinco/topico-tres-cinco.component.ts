@@ -29,7 +29,7 @@ export class UnidadTresTopicoTresCincoComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware/historia-de-los-componentes');
+    this.router.navigateByUrl('/hardware/tipos-de-computadoras');
   }
 
   paginaAnterior(): void {

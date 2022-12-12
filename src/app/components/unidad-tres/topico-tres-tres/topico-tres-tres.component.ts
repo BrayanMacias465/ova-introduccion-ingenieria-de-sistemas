@@ -29,10 +29,10 @@ export class UnidadTresTopicoTresTresComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/segunda-generacion');
+    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/cuarta-generacion');
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/cuarta-generacion');
+    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/segunda-generacion');
   }
 }
