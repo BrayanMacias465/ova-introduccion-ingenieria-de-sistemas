@@ -11,6 +11,20 @@ import { UnidadDosTopicoDosComponent } from './components/unidad-dos/topico-dos/
 import { UnidadDosTopicoSeisComponent } from './components/unidad-dos/topico-seis/topico-seis.component';
 import { UnidadDosTopicoTresComponent } from './components/unidad-dos/topico-tres/topico-tres.component';
 import { UnidadDosTopicoUnoComponent } from './components/unidad-dos/topico-uno/topico-uno.component';
+import { UnidadTresTopicoCatorceComponent } from './components/unidad-tres/topico-catorce/topico-catorce.component';
+import { UnidadTresTopicoCincoComponent } from './components/unidad-tres/topico-cinco/topico-cinco.component';
+import { UnidadTresTopicoCuatroComponent } from './components/unidad-tres/topico-cuatro/topico-cuatro.component';
+import { UnidadTresTopicoDiezComponent } from './components/unidad-tres/topico-diez/topico-diez.component';
+import { UnidadTresTopicoDoceComponent } from './components/unidad-tres/topico-doce/topico-doce.component';
+import { UnidadTresTopicoDosComponent } from './components/unidad-tres/topico-dos/topico-dos.component';
+import { UnidadTresTopicoNueveComponent } from './components/unidad-tres/topico-nueve/topico-nueve.component';
+import { UnidadTresTopicoOchoComponent } from './components/unidad-tres/topico-ocho/topico-ocho.component';
+import { UnidadTresTopicoOnceComponent } from './components/unidad-tres/topico-once/topico-once.component';
+import { UnidadTresTopicoSeisComponent } from './components/unidad-tres/topico-seis/topico-seis.component';
+import { UnidadTresTopicoSieteComponent } from './components/unidad-tres/topico-siete/topico-siete.component';
+import { UnidadTresTopicoTreceComponent } from './components/unidad-tres/topico-trece/topico-trece.component';
+import { UnidadTresTopicoTresComponent } from './components/unidad-tres/topico-tres/topico-tres.component';
+import { UnidadTresTopicoUnoComponent } from './components/unidad-tres/topico-uno/topico-uno.component';
 import { UnidadUnoTopicoCincoComponent } from './components/unidad-uno/topico-cinco/topico-cinco.component';
 import { UnidadUnoTopicoCuatroComponent } from './components/unidad-uno/topico-cuatro/topico-cuatro.component';
 import { UnidadUnoTopicoDosComponent } from './components/unidad-uno/topico-dos/topico-dos.component';
@@ -41,19 +55,20 @@ const routes: Routes = [
     { path: 'acreditacion-de-alta-calidad-de-la-Ingenieria-de-Sistemas-en-la-UFPS', component: UnidadDosTopicoSeisComponent }
   ]},
   { path: 'hardware', children: [
-    { path: 'historia-de-los-componentes', component: UnidadUnoTopicoUnoComponent },
-    { path: 'generaciones-de-los-computadores', component: UnidadUnoTopicoDosComponent },
-    { path: 'tipos-de-computadoras', component: UnidadUnoTopicoTresComponent },
-    { path: 'hardware-de-Entrada', component: UnidadUnoTopicoCuatroComponent },
-    { path: 'hardware-de-Salida', component: UnidadUnoTopicoCincoComponent },
-    { path: 'hardware-de-Proceso', component: UnidadUnoTopicoUnoComponent },
-    { path: 'memoria-principal-y-secundaria', component: UnidadUnoTopicoDosComponent },
-    { path: 'buses-del-sistema', component: UnidadUnoTopicoTresComponent },
-    { path: 'funcionamiento-interno-del-computador', component: UnidadUnoTopicoCuatroComponent },
-    { path: 'ensamble-de-computador', component: UnidadUnoTopicoCincoComponent },
-    { path: 'como-procesa-los-datos-el-computador', component: UnidadUnoTopicoUnoComponent },
-    { path: 'representacion-de-los-datos', component: UnidadUnoTopicoDosComponent },
-    { path: 'factores-que-afectan-la-velocidad-del-procesamiento', component: UnidadUnoTopicoTresComponent }
+    { path: '', component: UnidadTresTopicoUnoComponent },
+    { path: 'historia-de-los-componentes', component: UnidadTresTopicoDosComponent },
+    { path: 'generaciones-de-los-computadores', component: UnidadTresTopicoTresComponent },
+    { path: 'tipos-de-computadoras', component: UnidadTresTopicoCuatroComponent },
+    { path: 'hardware-de-Entrada', component: UnidadTresTopicoCincoComponent },
+    { path: 'hardware-de-Salida', component: UnidadTresTopicoSeisComponent },
+    { path: 'hardware-de-Proceso', component: UnidadTresTopicoSieteComponent },
+    { path: 'memoria-principal-y-secundaria', component: UnidadTresTopicoOchoComponent },
+    { path: 'buses-del-sistema', component: UnidadTresTopicoNueveComponent },
+    { path: 'funcionamiento-interno-del-computador', component: UnidadTresTopicoDiezComponent },
+    { path: 'ensamble-de-computador', component: UnidadTresTopicoOnceComponent },
+    { path: 'como-procesa-los-datos-el-computador', component: UnidadTresTopicoDoceComponent },
+    { path: 'representacion-de-los-datos', component: UnidadTresTopicoTreceComponent },
+    { path: 'factores-que-afectan-la-velocidad-del-procesamiento', component: UnidadTresTopicoCatorceComponent }
   ]},
   { path: 'derechos-de-autor', children: [
     { path: 'ley-23-Colombia-(UNESCO)', component: UnidadUnoTopicoUnoComponent },

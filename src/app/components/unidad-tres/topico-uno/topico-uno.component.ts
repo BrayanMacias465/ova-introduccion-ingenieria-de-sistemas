@@ -11,28 +11,28 @@ export class UnidadTresTopicoUnoComponent {
 
   constructor(private router: Router) {
     this.menu = [
-      { value: 'Tema',                                                link: '/ingenieria-de-sistemas' },
-      { value: 'Historia de los componentes',                         link: '/ingenieria-de-sistemas/que-es-la-ingenieria-de-sistemas' },
-      { value: 'Generaciones de los computadores',                    link: '/ingenieria-de-sistemas/campos-de-un-ingeniero-de-sistemas' },
-      { value: 'Tipos de computadoras',                               link: '/ingenieria-de-sistemas/Proyecto-Educativo-Institucional-PEI' },
-      { value: 'Hardware de Entrada',                                 link: '/ingenieria-de-sistemas/Proyecto-Educativo-del-Programa-PEP' },
-      { value: 'Hardware de Salida',                                  link: '/ingenieria-de-sistemas/acreditacion-de-alta-calidad-de-la-Ingenieria-de-Sistemas-en-la-UFPS' },
-      { value: 'Hardware de Proceso',                                 link: '/ingenieria-de-sistemas/que-es-la-ingenieria-de-sistemas' },
-      { value: 'Memoria principal y secundaria',                      link: '/ingenieria-de-sistemas/campos-de-un-ingeniero-de-sistemas' },
-      { value: 'Buses del sistema',                                   link: '/ingenieria-de-sistemas/Proyecto-Educativo-Institucional-PEI' },
-      { value: 'Funcionamiento interno del computador',               link: '/ingenieria-de-sistemas/Proyecto-Educativo-del-Programa-PEP' },
-      { value: 'Ensamble de computador',                              link: '/ingenieria-de-sistemas/acreditacion-de-alta-calidad-de-la-Ingenieria-de-Sistemas-en-la-UFPS' },
-      { value: 'Como procesa los datos el computador',                link: '/ingenieria-de-sistemas/que-es-la-ingenieria-de-sistemas' },
-      { value: 'Representacion de los datos',                         link: '/ingenieria-de-sistemas/campos-de-un-ingeniero-de-sistemas' },
-      { value: 'Factores que afectan la velocidad del procesamiento', link: '/ingenieria-de-sistemas/Proyecto-Educativo-Institucional-PEI' }
+      { value: 'Tema',                                                link: '/hardware' },
+      { value: 'Historia de los componentes',                         link: '/hardware/historia-de-los-componentes' },
+      { value: 'Generaciones de los computadores',                    link: '/hardware/generaciones-de-los-computadores' },
+      { value: 'Tipos de computadoras',                               link: '/hardware/tipos-de-computadoras' },
+      { value: 'Hardware de Entrada',                                 link: '/hardware/hardware-de-Entrada' },
+      { value: 'Hardware de Salida',                                  link: '/hardware/hardware-de-Salida' },
+      { value: 'Hardware de Proceso',                                 link: '/hardware/hardware-de-Proceso' },
+      { value: 'Memoria principal y secundaria',                      link: '/hardware/memoria-principal-y-secundaria' },
+      { value: 'Buses del sistema',                                   link: '/hardware/buses-del-sistema' },
+      { value: 'Funcionamiento interno del computador',               link: '/hardware/funcionamiento-interno-del-computador' },
+      { value: 'Ensamble de computador',                              link: '/hardware/ensamble-de-computador' },
+      { value: 'Como procesa los datos el computador',                link: '/hardware/como-procesa-los-datos-el-computador' },
+      { value: 'Representacion de los datos',                         link: '/hardware/representacion-de-los-datos' },
+      { value: 'Factores que afectan la velocidad del procesamiento', link: '/hardware/factores-que-afectan-la-velocidad-del-procesamiento' }
     ];
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/ingenieria-de-sistemas/que-es-la-ingenieria-de-sistemas');
+    this.router.navigateByUrl('/hardware/historia-de-los-componentes');
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas/codigo-de-etica-del-ingeniero');
+    this.router.navigateByUrl('/ingenieria-de-sistemas/Proyecto-Educativo-Institucional-PEI');
   }
 }

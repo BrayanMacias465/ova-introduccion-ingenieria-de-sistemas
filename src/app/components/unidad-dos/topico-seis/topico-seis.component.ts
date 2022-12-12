@@ -21,7 +21,7 @@ export class UnidadDosTopicoSeisComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/ingenieria-de-sistemas/acreditacion-de-alta-calidad-de-la-Ingenieria-de-Sistemas-en-la-UFPS');
+    this.router.navigateByUrl('/hardware');
   }
 
   paginaAnterior(): void {
