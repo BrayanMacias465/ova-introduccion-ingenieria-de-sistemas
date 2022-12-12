@@ -36,8 +36,8 @@ const routes: Routes = [
     { path: '', component: UnidadDosTopicoUnoComponent },
     { path: 'que-es-la-ingenieria-de-sistemas', component: UnidadDosTopicoDosComponent },
     { path: 'campos-de-un-ingeniero-de-sistemas', component: UnidadDosTopicoTresComponent  },
-    { path: 'Proyecto-Educativo-Institucional(PEI)', component: UnidadDosTopicoCuatroComponent },
-    { path: 'Proyecto-Educativo-del-Programa(PEP)', component: UnidadDosTopicoCincoComponent },
+    { path: 'Proyecto-Educativo-Institucional-PEI', component: UnidadDosTopicoCuatroComponent },
+    { path: 'Proyecto-Educativo-del-Programa-PEP', component: UnidadDosTopicoCincoComponent },
     { path: 'acreditacion-de-alta-calidad-de-la-Ingenieria-de-Sistemas-en-la-UFPS', component: UnidadDosTopicoSeisComponent }
   ]},
   { path: 'hardware', children: [
