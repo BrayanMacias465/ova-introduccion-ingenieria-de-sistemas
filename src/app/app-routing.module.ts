@@ -5,6 +5,11 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { UnidadCeroTopicoDosComponent } from './components/unidad-cero/topico-dos/topico-dos.component';
 import { UnidadCeroTopicoTresComponent } from './components/unidad-cero/topico-tres/topico-tres.component';
 import { UnidadCeroTopicoUnoComponent } from './components/unidad-cero/topico-uno/topico-uno.component';
+import { UnidadDosTopicoCincoComponent } from './components/unidad-dos/topico-cinco/topico-cinco.component';
+import { UnidadDosTopicoCuatroComponent } from './components/unidad-dos/topico-cuatro/topico-cuatro.component';
+import { UnidadDosTopicoDosComponent } from './components/unidad-dos/topico-dos/topico-dos.component';
+import { UnidadDosTopicoSeisComponent } from './components/unidad-dos/topico-seis/topico-seis.component';
+import { UnidadDosTopicoTresComponent } from './components/unidad-dos/topico-tres/topico-tres.component';
 import { UnidadDosTopicoUnoComponent } from './components/unidad-dos/topico-uno/topico-uno.component';
 import { UnidadUnoTopicoCincoComponent } from './components/unidad-uno/topico-cinco/topico-cinco.component';
 import { UnidadUnoTopicoCuatroComponent } from './components/unidad-uno/topico-cuatro/topico-cuatro.component';
@@ -28,11 +33,12 @@ const routes: Routes = [
     { path: 'codigo-de-etica-del-ingeniero', component: UnidadUnoTopicoCincoComponent }
   ]},
   { path: 'ingenieria-de-sistemas', children: [
-    { path: '¿que-es-la-ingeniería-de-sistemas?', component: UnidadDosTopicoUnoComponent },
-    { path: 'campos-de-un-ingeniero-de-sistemas', component: UnidadUnoTopicoDosComponent },
-    { path: 'Proyecto-Educativo-Institucional(PEI)', component: UnidadUnoTopicoTresComponent },
-    { path: 'Proyecto-Educativo-del-Programa(PEP)', component: UnidadUnoTopicoCuatroComponent },
-    { path: 'acreditación-de-alta-calidad-de-la-Ingeniería-de-Sistemas-en-la-UFPS', component: UnidadUnoTopicoCincoComponent }
+    { path: '', component: UnidadDosTopicoUnoComponent },
+    { path: '¿que-es-la-ingenieria-de-sistemas?', component: UnidadDosTopicoDosComponent },
+    { path: 'campos-de-un-ingeniero-de-sistemas', component: UnidadDosTopicoTresComponent  },
+    { path: 'Proyecto-Educativo-Institucional(PEI)', component: UnidadDosTopicoCuatroComponent },
+    { path: 'Proyecto-Educativo-del-Programa(PEP)', component: UnidadDosTopicoCincoComponent },
+    { path: 'acreditacion-de-alta-calidad-de-la-Ingenieria-de-Sistemas-en-la-UFPS', component: UnidadDosTopicoSeisComponent }
   ]},
   { path: 'hardware', children: [
     { path: 'historia-de-los-componentes', component: UnidadUnoTopicoUnoComponent },
