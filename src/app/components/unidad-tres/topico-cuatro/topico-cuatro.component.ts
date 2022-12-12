@@ -33,6 +33,6 @@ export class UnidadTresTopicoCuatroComponent {
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores');
+    this.router.navigateByUrl('/hardware/generaciones-de-los-computadores/quinta-generacion');
   }
 }
