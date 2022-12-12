@@ -15,6 +15,9 @@ import { UnidadUnoTopicoDosComponent } from './components/unidad-uno/topico-dos/
 import { UnidadUnoTopicoTresComponent } from './components/unidad-uno/topico-tres/topico-tres.component';
 import { UnidadUnoTopicoCuatroComponent } from './components/unidad-uno/topico-cuatro/topico-cuatro.component';
 import { UnidadUnoTopicoCincoComponent } from './components/unidad-uno/topico-cinco/topico-cinco.component';
+import { UnidadDosTopicoUnoComponent } from './components/unidad-dos/topico-uno/topico-uno.component';
+import { UnidadDosTopicoDosComponent } from './components/unidad-dos/topico-dos/topico-dos.component';
+import { UnidadDosTopicoTresComponent } from './components/unidad-dos/topico-tres/topico-tres.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { UnidadUnoTopicoCincoComponent } from './components/unidad-uno/topico-ci
     UnidadUnoTopicoDosComponent,
     UnidadUnoTopicoTresComponent,
     UnidadUnoTopicoCuatroComponent,
-    UnidadUnoTopicoCincoComponent
+    UnidadUnoTopicoCincoComponent,
+    UnidadDosTopicoUnoComponent,
+    UnidadDosTopicoDosComponent,
+    UnidadDosTopicoTresComponent
   ],
   imports: [
     BrowserModule,
