@@ -60,8 +60,8 @@ const routes: Routes = [
     { path: 'normatividad-de-derechos-de-actor-y-propiedad-intelectual', component: UnidadUnoTopicoDosComponent },
     { path: 'politica-de-proteccion-de-datos', component: UnidadUnoTopicoTresComponent },
     { path: 'preguntas-frecuentes-sobre-derecho-de-autor', component: UnidadUnoTopicoCuatroComponent },
-    { path: '¿que-es-el-copyright?', component: UnidadUnoTopicoCincoComponent },
-    { path: '¿que-es-la-propiedad-intelectual?', component: UnidadUnoTopicoCincoComponent }
+    { path: 'que-es-el-copyright', component: UnidadUnoTopicoCincoComponent },
+    { path: 'que-es-la-propiedad-intelectual', component: UnidadUnoTopicoCincoComponent }
   ]},
   { path: 'software-y-licencias', children: [
     { path: 'conceptos-del-software', component: UnidadUnoTopicoUnoComponent },

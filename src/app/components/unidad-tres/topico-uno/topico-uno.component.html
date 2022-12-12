@@ -1,0 +1,24 @@
+<app-navbar [menu]="menu" [titulo]="'Tema - Unidad 2'" (anteriorClick)="paginaAnterior()" (siguienteClick)="paginaSiguiente()"></app-navbar>
+<div class="lab">
+  <div class="row">
+    <div class="col-md-6">
+        <h1 class="mb-4">Unidad 2</h1>
+        <p class="mb-4 fw-bold">Ingeniería de sistemas</p>
+      
+        <p class="mb-4">Temas en la unidad:</p>
+        <ol>
+            <li>¿Que es la ingeniería de sistemas?</li>
+            <li>Campos de un ingeniero de sistemas</li>
+            <li>Proyecto Educativo Institucional(PEI)</li>
+            <li>Proyecto Educativo del Programa(PEP)</li>
+            <li>Acreditación de alta calidad de la Ingeniería de Sistemas en la UFPS</li>
+        </ol>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center align-content-center align-items-center">
+      <div>
+        <img src="https://sedigital.ugto.mx/campusdigital/wp-content/uploads/sites/2/2022/06/Especialidad-en-Desarrollo-de-Nuevas-Empresas-de-Base-Tecnolo%CC%81gica-scaled.jpg" width="700px">
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer (anteriorClick)="paginaAnterior()" (siguienteClick)="paginaSiguiente()"></app-footer>

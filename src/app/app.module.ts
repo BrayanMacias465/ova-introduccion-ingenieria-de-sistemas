@@ -21,6 +21,20 @@ import { UnidadDosTopicoTresComponent } from './components/unidad-dos/topico-tre
 import { UnidadDosTopicoCuatroComponent } from './components/unidad-dos/topico-cuatro/topico-cuatro.component';
 import { UnidadDosTopicoCincoComponent } from './components/unidad-dos/topico-cinco/topico-cinco.component';
 import { UnidadDosTopicoSeisComponent } from './components/unidad-dos/topico-seis/topico-seis.component';
+import { UnidadTresTopicoUnoComponent } from './components/unidad-tres/topico-uno/topico-uno.component';
+import { UnidadTresTopicoDosComponent } from './components/unidad-tres/topico-dos/topico-dos.component';
+import { UnidadTresTopicoTresComponent } from './components/unidad-tres/topico-tres/topico-tres.component';
+import { UnidadTresTopicoCuatroComponent } from './components/unidad-tres/topico-cuatro/topico-cuatro.component';
+import { UnidadTresTopicoCincoComponent } from './components/unidad-tres/topico-cinco/topico-cinco.component';
+import { UnidadTresTopicoSeisComponent } from './components/unidad-tres/topico-seis/topico-seis.component';
+import { UnidadTresTopicoSieteComponent } from './components/unidad-tres/topico-siete/topico-siete.component';
+import { UnidadTresTopicoOchoComponent } from './components/unidad-tres/topico-ocho/topico-ocho.component';
+import { UnidadTresTopicoNueveComponent } from './components/unidad-tres/topico-nueve/topico-nueve.component';
+import { UnidadTresTopicoDiezComponent } from './components/unidad-tres/topico-diez/topico-diez.component';
+import { UnidadTresTopicoOnceComponent } from './components/unidad-tres/topico-once/topico-once.component';
+import { UnidadTresTopicoDoceComponent } from './components/unidad-tres/topico-doce/topico-doce.component';
+import { UnidadTresTopicoTreceComponent } from './components/unidad-tres/topico-trece/topico-trece.component';
+import { UnidadTresTopicoCatorceComponent } from './components/unidad-tres/topico-catorce/topico-catorce.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +57,20 @@ import { UnidadDosTopicoSeisComponent } from './components/unidad-dos/topico-sei
     UnidadDosTopicoCuatroComponent,
     UnidadDosTopicoCincoComponent,
     UnidadDosTopicoSeisComponent,
+    UnidadTresTopicoUnoComponent,
+    UnidadTresTopicoDosComponent,
+    UnidadTresTopicoTresComponent,
+    UnidadTresTopicoCuatroComponent,
+    UnidadTresTopicoCincoComponent,
+    UnidadTresTopicoSeisComponent,
+    UnidadTresTopicoSieteComponent,
+    UnidadTresTopicoOchoComponent,
+    UnidadTresTopicoNueveComponent,
+    UnidadTresTopicoDiezComponent,
+    UnidadTresTopicoOnceComponent,
+    UnidadTresTopicoDoceComponent,
+    UnidadTresTopicoTreceComponent,
+    UnidadTresTopicoCatorceComponent,
   ],
   imports: [
     BrowserModule,
