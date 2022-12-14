@@ -39,6 +39,20 @@ import { UnidadTresTopicoTresDosComponent } from './components/unidad-tres/topic
 import { UnidadTresTopicoTresTresComponent } from './components/unidad-tres/topico-tres-tres/topico-tres-tres.component';
 import { UnidadTresTopicoTresCuatroComponent } from './components/unidad-tres/topico-tres-cuatro/topico-tres-cuatro.component';
 import { UnidadTresTopicoTresCincoComponent } from './components/unidad-tres/topico-tres-cinco/topico-tres-cinco.component';
+import { UnidadCuatroTopicoUnoComponent } from './components/unidad-cuatro/topico-uno/topico-uno.component';
+import { UnidadCuatroTopicoDosComponent } from './components/unidad-cuatro/topico-dos/topico-dos.component';
+import { UnidadCuatroTopicoTresComponent } from './components/unidad-cuatro/topico-tres/topico-tres.component';
+import { UnidadCuatroTopicoCuatroComponent } from './components/unidad-cuatro/topico-cuatro/topico-cuatro.component';
+import { UnidadCuatroTopicoCincoComponent } from './components/unidad-cuatro/topico-cinco/topico-cinco.component';
+import { UnidadCuatroTopicoSeisComponent } from './components/unidad-cuatro/topico-seis/topico-seis.component';
+import { UnidadCuatroTopicoSieteComponent } from './components/unidad-cuatro/topico-siete/topico-siete.component';
+import { UnidadCincoTopicoCincoComponent } from './components/unidad-cinco/topico-cinco/topico-cinco.component';
+import { UnidadCincoTopicoCuatroComponent } from './components/unidad-cinco/topico-cuatro/topico-cuatro.component';
+import { UnidadCincoTopicoDosComponent } from './components/unidad-cinco/topico-dos/topico-dos.component';
+import { UnidadCincoTopicoSeisComponent } from './components/unidad-cinco/topico-seis/topico-seis.component';
+import { UnidadCincoTopicoSieteComponent } from './components/unidad-cinco/topico-siete/topico-siete.component';
+import { UnidadCincoTopicoTresComponent } from './components/unidad-cinco/topico-tres/topico-tres.component';
+import { UnidadCincoTopicoUnoComponent } from './components/unidad-cinco/topico-uno/topico-uno.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +93,20 @@ import { UnidadTresTopicoTresCincoComponent } from './components/unidad-tres/top
     UnidadTresTopicoTresTresComponent,
     UnidadTresTopicoTresCuatroComponent,
     UnidadTresTopicoTresCincoComponent,
+    UnidadCuatroTopicoUnoComponent,
+    UnidadCuatroTopicoDosComponent,
+    UnidadCuatroTopicoTresComponent,
+    UnidadCuatroTopicoCuatroComponent,
+    UnidadCuatroTopicoCincoComponent,
+    UnidadCuatroTopicoSeisComponent,
+    UnidadCuatroTopicoSieteComponent,
+    UnidadCincoTopicoUnoComponent,
+    UnidadCincoTopicoDosComponent,
+    UnidadCincoTopicoTresComponent,
+    UnidadCincoTopicoCuatroComponent,
+    UnidadCincoTopicoCincoComponent,
+    UnidadCincoTopicoSeisComponent,
+    UnidadCincoTopicoSieteComponent
   ],
   imports: [
     BrowserModule,
