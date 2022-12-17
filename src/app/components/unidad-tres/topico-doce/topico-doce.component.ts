@@ -29,10 +29,10 @@ export class UnidadTresTopicoDoceComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware/factores-que-afectan-la-velocidad-del-procesamiento');
+    this.router.navigateByUrl('/hardware/representacion-de-los-datos');
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/hardware/como-procesa-los-datos-el-computador');
+    this.router.navigateByUrl('/hardware/ensamble-de-computador');
   }
 }

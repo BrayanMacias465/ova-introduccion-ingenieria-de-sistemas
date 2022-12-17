@@ -29,10 +29,10 @@ export class UnidadTresTopicoOnceComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware/representacion-de-los-datos');
+    this.router.navigateByUrl('/hardware/como-procesa-los-datos-el-computador');
   }
 
   paginaAnterior(): void {
-    this.router.navigateByUrl('/hardware/ensamble-de-computador');
+    this.router.navigateByUrl('/hardware/funcionamiento-interno-del-computador');
   }
 }

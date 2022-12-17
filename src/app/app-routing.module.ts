@@ -5,6 +5,20 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { UnidadCeroTopicoDosComponent } from './components/unidad-cero/topico-dos/topico-dos.component';
 import { UnidadCeroTopicoTresComponent } from './components/unidad-cero/topico-tres/topico-tres.component';
 import { UnidadCeroTopicoUnoComponent } from './components/unidad-cero/topico-uno/topico-uno.component';
+import { UnidadCincoTopicoCincoComponent } from './components/unidad-cinco/topico-cinco/topico-cinco.component';
+import { UnidadCincoTopicoCuatroComponent } from './components/unidad-cinco/topico-cuatro/topico-cuatro.component';
+import { UnidadCincoTopicoDosComponent } from './components/unidad-cinco/topico-dos/topico-dos.component';
+import { UnidadCincoTopicoSeisComponent } from './components/unidad-cinco/topico-seis/topico-seis.component';
+import { UnidadCincoTopicoSieteComponent } from './components/unidad-cinco/topico-siete/topico-siete.component';
+import { UnidadCincoTopicoTresComponent } from './components/unidad-cinco/topico-tres/topico-tres.component';
+import { UnidadCincoTopicoUnoComponent } from './components/unidad-cinco/topico-uno/topico-uno.component';
+import { UnidadCuatroTopicoCincoComponent } from './components/unidad-cuatro/topico-cinco/topico-cinco.component';
+import { UnidadCuatroTopicoCuatroComponent } from './components/unidad-cuatro/topico-cuatro/topico-cuatro.component';
+import { UnidadCuatroTopicoDosComponent } from './components/unidad-cuatro/topico-dos/topico-dos.component';
+import { UnidadCuatroTopicoSeisComponent } from './components/unidad-cuatro/topico-seis/topico-seis.component';
+import { UnidadCuatroTopicoSieteComponent } from './components/unidad-cuatro/topico-siete/topico-siete.component';
+import { UnidadCuatroTopicoTresComponent } from './components/unidad-cuatro/topico-tres/topico-tres.component';
+import { UnidadCuatroTopicoUnoComponent } from './components/unidad-cuatro/topico-uno/topico-uno.component';
 import { UnidadDosTopicoCincoComponent } from './components/unidad-dos/topico-cinco/topico-cinco.component';
 import { UnidadDosTopicoCuatroComponent } from './components/unidad-dos/topico-cuatro/topico-cuatro.component';
 import { UnidadDosTopicoDosComponent } from './components/unidad-dos/topico-dos/topico-dos.component';
@@ -81,20 +95,22 @@ const routes: Routes = [
     { path: 'factores-que-afectan-la-velocidad-del-procesamiento', component: UnidadTresTopicoCatorceComponent }
   ]},
   { path: 'derechos-de-autor', children: [
-    { path: 'ley-23-Colombia-(UNESCO)', component: UnidadUnoTopicoUnoComponent },
-    { path: 'normatividad-de-derechos-de-actor-y-propiedad-intelectual', component: UnidadUnoTopicoDosComponent },
-    { path: 'politica-de-proteccion-de-datos', component: UnidadUnoTopicoTresComponent },
-    { path: 'preguntas-frecuentes-sobre-derecho-de-autor', component: UnidadUnoTopicoCuatroComponent },
-    { path: 'que-es-el-copyright', component: UnidadUnoTopicoCincoComponent },
-    { path: 'que-es-la-propiedad-intelectual', component: UnidadUnoTopicoCincoComponent }
+    { path: '', component: UnidadCuatroTopicoUnoComponent },
+    { path: 'ley-23-Colombia-UNESCO', component: UnidadCuatroTopicoDosComponent },
+    { path: 'normatividad-de-derechos-de-actor-y-propiedad-intelectual', component: UnidadCuatroTopicoTresComponent },
+    { path: 'politica-de-proteccion-de-datos', component: UnidadCuatroTopicoCuatroComponent },
+    { path: 'preguntas-frecuentes-sobre-derecho-de-autor', component: UnidadCuatroTopicoCincoComponent },
+    { path: 'que-es-el-copyright', component: UnidadCuatroTopicoSeisComponent },
+    { path: 'que-es-la-propiedad-intelectual', component: UnidadCuatroTopicoSieteComponent }
   ]},
   { path: 'software-y-licencias', children: [
-    { path: 'conceptos-del-software', component: UnidadUnoTopicoUnoComponent },
-    { path: 'software-base', component: UnidadUnoTopicoDosComponent },
-    { path: 'software-de-desarrollo', component: UnidadUnoTopicoTresComponent },
-    { path: 'software-de-aplicacion', component: UnidadUnoTopicoCuatroComponent },
-    { path: 'software-utilitario', component: UnidadUnoTopicoCincoComponent },
-    { path: 'licencia-de-software', component: UnidadUnoTopicoCincoComponent }
+    { path: '', component: UnidadCincoTopicoUnoComponent },
+    { path: 'conceptos-del-software', component: UnidadCincoTopicoDosComponent },
+    { path: 'software-base', component: UnidadCincoTopicoTresComponent },
+    { path: 'software-de-desarrollo', component: UnidadCincoTopicoCuatroComponent },
+    { path: 'software-de-aplicacion', component: UnidadCincoTopicoCincoComponent },
+    { path: 'software-utilitario', component: UnidadCincoTopicoSeisComponent },
+    { path: 'licencia-de-software', component: UnidadCincoTopicoSieteComponent }
   ]},
 ];
 
