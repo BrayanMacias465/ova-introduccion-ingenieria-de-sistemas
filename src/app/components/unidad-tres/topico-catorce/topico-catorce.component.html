@@ -1,13 +1,43 @@
-<app-navbar [menu]="menu" [titulo]="'3.13 Factores que afectan la velocidad del procesamiento'" (anteriorClick)="paginaAnterior()" (siguienteClick)="paginaSiguiente()"></app-navbar>
+<app-navbar [menu]="menu" [titulo]="'3.13 Factores que afectan la velocidad del procesamiento'"
+  (anteriorClick)="paginaAnterior()" (siguienteClick)="paginaSiguiente()"></app-navbar>
 <div class="lab">
   <div class="row">
     <div class="col-md-6">
-        <h1 class="mb-4">Factores que afectan la velocidad del procesamiento</h1>
-      
-        
+      <h1 class="mb-4">Factores que afectan la velocidad del procesamiento</h1>
+      <p>El diseño de un CPU determina su velocidad básica, pero otros factores pueden
+        hacer que los chips que están diseñados para cierta velocidad funcionen aún más
+        rápido. Ya se han visto algunos de estos factores, por ejemplo los registros del
+        CPU y la memoria. Otros factores como el caché de memoria, la velocidad del
+        reloj y el bus de datos afectan la velocidad de una computadora.
+      </p>
+
+      <p>
+        <li><Strong>Registros:</Strong>El tamaño de los registros, el cual en ocasiones se conoce como tamaño de
+          palabra, indica la cantidad de datos con la cual puede trabajar la computadora en
+          un momento. Mientras más grande sea el tamaño de la palabra, más rápido
+          procesa la computadora un conjunto de datos. Ocasionalmente, escuchará a
+          personas referirse a “procesadores de 32 bits” o “procesadores de 64 bits” o
+          incluso “computadoras de 64 bits”. Esta terminología se refiere al tamaño de los
+          registros del procesador. Si todos los demás factores se mantienen igual, un CPU
+          con registros de 32 bits puede procesar datos dos veces más rápido que uno que
+          tiene registros de 16 bits.
+        </li>
+        <li><Strong>Reloj interno de la computadora:</Strong>Todas las computadoras tienen un reloj del sistema, pero
+          estar a tiempo con el día
+          no es el propósito principal del reloj. Al igual que la mayoría de los relojes de
+          muñeca modernos, el reloj es controlado por un cristal de cuarzo. Cuando se le
+          aplica electricidad, las moléculas en el cristal vibran millones de veces por
+          segundo, con una velocidad que nunca cambia. La velocidad de las vibraciones
+          está determinada por el grosor del cristal. La computadora utiliza las vibraciones
+          del cuarzo del reloj del sistema para marcar el tiempo de sus operaciones de
+          procesamiento.</li>
+      </p>
+
     </div>
     <div class="col-md-6 d-flex justify-content-center align-content-center align-items-center">
-      
+      <div>   
+        <img src="./assets/img/Imagen21.webp" width="500px">
+      </div>
     </div>
   </div>
 </div>
