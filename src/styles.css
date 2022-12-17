@@ -23,6 +23,6 @@
     font-weight: bold;
 }
 
-.lab p {
+.lab p,li {
     text-align: justify;
 }
