@@ -16,7 +16,7 @@ export class UsuariosComponent {
 
   constructor(private estudianteService: EstudiantesService, private messageService: MessageService, private confirmationService: ConfirmationService) { }
 
-  ngOnInit() {
+ /*  ngOnInit() {
     this.estudianteService.getEstudiante().subscribe(
       response => {
         console.log(response);
@@ -26,8 +26,8 @@ export class UsuariosComponent {
       }
     );
     this.obtenerCalificaciones(14, 1);
-  }
-
+  } */
+/* 
   obtenerCalificaciones(id_estudiante: number, id_tema: number): Observable<any> {
     const calificacion = new Subject<any>();
     this.estudianteService.getCalificacion(id_estudiante, id_tema).subscribe(
@@ -39,7 +39,7 @@ export class UsuariosComponent {
       }
     );
     return calificacion;
-  }
+  } */
 
   openNew() {
     this.estudianteDialog = true;
