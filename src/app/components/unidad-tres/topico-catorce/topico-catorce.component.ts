@@ -29,7 +29,7 @@ export class UnidadTresTopicoCatorceComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware/factores-que-afectan-la-velocidad-del-procesamiento');
+    this.router.navigateByUrl('/hardware/actividad');
   }
 
   paginaAnterior(): void {

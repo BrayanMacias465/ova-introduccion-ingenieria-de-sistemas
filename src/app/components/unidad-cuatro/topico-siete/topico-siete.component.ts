@@ -22,7 +22,7 @@ export class UnidadCuatroTopicoSieteComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/derechos-de-autor/que-es-la-propiedad-intelectual');
+    this.router.navigateByUrl('/derechos-de-autor/actividad');
   }
 
   paginaAnterior(): void {

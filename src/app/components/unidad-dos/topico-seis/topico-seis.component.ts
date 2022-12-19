@@ -21,7 +21,7 @@ export class UnidadDosTopicoSeisComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/hardware');
+    this.router.navigateByUrl('/ingenieria-de-sistemas/actividad');
   }
 
   paginaAnterior(): void {

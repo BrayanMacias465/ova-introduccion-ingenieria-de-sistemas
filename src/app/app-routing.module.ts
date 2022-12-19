@@ -5,6 +5,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { UnidadCeroTopicoDosComponent } from './components/unidad-cero/topico-dos/topico-dos.component';
 import { UnidadCeroTopicoTresComponent } from './components/unidad-cero/topico-tres/topico-tres.component';
 import { UnidadCeroTopicoUnoComponent } from './components/unidad-cero/topico-uno/topico-uno.component';
+import { ActividadCincoComponent } from './components/unidad-cinco/actividad/actividad.component';
+import { QuizCincoComponent } from './components/unidad-cinco/quiz/quiz.component';
 import { UnidadCincoTopicoCincoComponent } from './components/unidad-cinco/topico-cinco/topico-cinco.component';
 import { UnidadCincoTopicoCuatroComponent } from './components/unidad-cinco/topico-cuatro/topico-cuatro.component';
 import { UnidadCincoTopicoDosComponent } from './components/unidad-cinco/topico-dos/topico-dos.component';
@@ -12,6 +14,8 @@ import { UnidadCincoTopicoSeisComponent } from './components/unidad-cinco/topico
 import { UnidadCincoTopicoSieteComponent } from './components/unidad-cinco/topico-siete/topico-siete.component';
 import { UnidadCincoTopicoTresComponent } from './components/unidad-cinco/topico-tres/topico-tres.component';
 import { UnidadCincoTopicoUnoComponent } from './components/unidad-cinco/topico-uno/topico-uno.component';
+import { ActividadCuatroComponent } from './components/unidad-cuatro/actividad/actividad.component';
+import { QuizCuatroComponent } from './components/unidad-cuatro/quiz/quiz.component';
 import { UnidadCuatroTopicoCincoComponent } from './components/unidad-cuatro/topico-cinco/topico-cinco.component';
 import { UnidadCuatroTopicoCuatroComponent } from './components/unidad-cuatro/topico-cuatro/topico-cuatro.component';
 import { UnidadCuatroTopicoDosComponent } from './components/unidad-cuatro/topico-dos/topico-dos.component';
@@ -19,12 +23,16 @@ import { UnidadCuatroTopicoSeisComponent } from './components/unidad-cuatro/topi
 import { UnidadCuatroTopicoSieteComponent } from './components/unidad-cuatro/topico-siete/topico-siete.component';
 import { UnidadCuatroTopicoTresComponent } from './components/unidad-cuatro/topico-tres/topico-tres.component';
 import { UnidadCuatroTopicoUnoComponent } from './components/unidad-cuatro/topico-uno/topico-uno.component';
+import { ActividadDosComponent } from './components/unidad-dos/actividad/actividad.component';
+import { QuizDosComponent } from './components/unidad-dos/quiz/quiz.component';
 import { UnidadDosTopicoCincoComponent } from './components/unidad-dos/topico-cinco/topico-cinco.component';
 import { UnidadDosTopicoCuatroComponent } from './components/unidad-dos/topico-cuatro/topico-cuatro.component';
 import { UnidadDosTopicoDosComponent } from './components/unidad-dos/topico-dos/topico-dos.component';
 import { UnidadDosTopicoSeisComponent } from './components/unidad-dos/topico-seis/topico-seis.component';
 import { UnidadDosTopicoTresComponent } from './components/unidad-dos/topico-tres/topico-tres.component';
 import { UnidadDosTopicoUnoComponent } from './components/unidad-dos/topico-uno/topico-uno.component';
+import { ActividadTresComponent } from './components/unidad-tres/actividad/actividad.component';
+import { QuizTresComponent } from './components/unidad-tres/quiz/quiz.component';
 import { UnidadTresTopicoCatorceComponent } from './components/unidad-tres/topico-catorce/topico-catorce.component';
 import { UnidadTresTopicoCincoComponent } from './components/unidad-tres/topico-cinco/topico-cinco.component';
 import { UnidadTresTopicoCuatroComponent } from './components/unidad-tres/topico-cuatro/topico-cuatro.component';
@@ -43,36 +51,46 @@ import { UnidadTresTopicoTresDosComponent } from './components/unidad-tres/topic
 import { UnidadTresTopicoTresTresComponent } from './components/unidad-tres/topico-tres-tres/topico-tres-tres.component';
 import { UnidadTresTopicoTresComponent } from './components/unidad-tres/topico-tres/topico-tres.component';
 import { UnidadTresTopicoUnoComponent } from './components/unidad-tres/topico-uno/topico-uno.component';
+import { ActividadUnoComponent } from './components/unidad-uno/actividad/actividad.component';
+import { QuizUnoComponent } from './components/unidad-uno/quiz/quiz.component';
 import { UnidadUnoTopicoCincoComponent } from './components/unidad-uno/topico-cinco/topico-cinco.component';
 import { UnidadUnoTopicoCuatroComponent } from './components/unidad-uno/topico-cuatro/topico-cuatro.component';
 import { UnidadUnoTopicoDosComponent } from './components/unidad-uno/topico-dos/topico-dos.component';
 import { UnidadUnoTopicoTresComponent } from './components/unidad-uno/topico-tres/topico-tres.component';
 import { UnidadUnoTopicoUnoComponent } from './components/unidad-uno/topico-uno/topico-uno.component';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+
+import { AutenticacionGuard } from "./guards/autenticacion.guard";
 
 const routes: Routes = [
   { path: 'autenticacion', component: AutenticacionComponent },
-  { path: '', component: InicioComponent },
-  { path: 'bienvenido', children: [
+  { path: '', canActivate: [AutenticacionGuard], component: InicioComponent },
+  { path: 'usuarios', canActivate: [AutenticacionGuard], component: UsuariosComponent },
+  { path: 'bienvenido', canActivate: [AutenticacionGuard], children: [
     { path: '', component: UnidadCeroTopicoUnoComponent },
     { path: 'estructura-del-curso', component: UnidadCeroTopicoDosComponent },
     { path: 'temario', component: UnidadCeroTopicoTresComponent }
   ]}, 
-  { path: 'introduccion-ingieneria-de-sistemas', children: [
+  { path: 'introduccion-ingieneria-de-sistemas', canActivate: [AutenticacionGuard], children: [
     { path: '', component: UnidadUnoTopicoUnoComponent },
     { path: 'historia-ingenieria', component: UnidadUnoTopicoDosComponent },
     { path: 'ingenieria-en-colombia', component: UnidadUnoTopicoTresComponent },
     { path: 'cualidades-del-ingeniero', component: UnidadUnoTopicoCuatroComponent },
-    { path: 'codigo-de-etica-del-ingeniero', component: UnidadUnoTopicoCincoComponent }
+    { path: 'codigo-de-etica-del-ingeniero', component: UnidadUnoTopicoCincoComponent },
+    { path: 'actividad', component: ActividadUnoComponent },
+    { path: 'quiz', component: QuizUnoComponent }
   ]},
-  { path: 'ingenieria-de-sistemas', children: [
+  { path: 'ingenieria-de-sistemas', canActivate: [AutenticacionGuard], children: [
     { path: '', component: UnidadDosTopicoUnoComponent },
     { path: 'que-es-la-ingenieria-de-sistemas', component: UnidadDosTopicoDosComponent },
     { path: 'campos-de-un-ingeniero-de-sistemas', component: UnidadDosTopicoTresComponent  },
     { path: 'Proyecto-Educativo-Institucional-PEI', component: UnidadDosTopicoCuatroComponent },
     { path: 'Proyecto-Educativo-del-Programa-PEP', component: UnidadDosTopicoCincoComponent },
-    { path: 'acreditacion-de-alta-calidad-de-la-Ingenieria-de-Sistemas-en-la-UFPS', component: UnidadDosTopicoSeisComponent }
+    { path: 'acreditacion-de-alta-calidad-de-la-Ingenieria-de-Sistemas-en-la-UFPS', component: UnidadDosTopicoSeisComponent },
+    { path: 'actividad', component: ActividadDosComponent },
+    { path: 'quiz', component: QuizDosComponent }
   ]},
-  { path: 'hardware', children: [
+  { path: 'hardware', canActivate: [AutenticacionGuard], children: [
     { path: '', component: UnidadTresTopicoUnoComponent },
     { path: 'historia-de-los-componentes', component: UnidadTresTopicoDosComponent },
     { path: 'generaciones-de-los-computadores', children: [
@@ -92,25 +110,31 @@ const routes: Routes = [
     { path: 'ensamble-de-computador', component: UnidadTresTopicoOnceComponent },
     { path: 'como-procesa-los-datos-el-computador', component: UnidadTresTopicoDoceComponent },
     { path: 'representacion-de-los-datos', component: UnidadTresTopicoTreceComponent },
-    { path: 'factores-que-afectan-la-velocidad-del-procesamiento', component: UnidadTresTopicoCatorceComponent }
+    { path: 'factores-que-afectan-la-velocidad-del-procesamiento', component: UnidadTresTopicoCatorceComponent },
+    { path: 'actividad', component: ActividadTresComponent },
+    { path: 'quiz', component: QuizTresComponent }
   ]},
-  { path: 'derechos-de-autor', children: [
+  { path: 'derechos-de-autor', canActivate: [AutenticacionGuard], children: [
     { path: '', component: UnidadCuatroTopicoUnoComponent },
     { path: 'ley-23-Colombia-UNESCO', component: UnidadCuatroTopicoDosComponent },
     { path: 'normatividad-de-derechos-de-actor-y-propiedad-intelectual', component: UnidadCuatroTopicoTresComponent },
     { path: 'politica-de-proteccion-de-datos', component: UnidadCuatroTopicoCuatroComponent },
     { path: 'preguntas-frecuentes-sobre-derecho-de-autor', component: UnidadCuatroTopicoCincoComponent },
     { path: 'que-es-el-copyright', component: UnidadCuatroTopicoSeisComponent },
-    { path: 'que-es-la-propiedad-intelectual', component: UnidadCuatroTopicoSieteComponent }
+    { path: 'que-es-la-propiedad-intelectual', component: UnidadCuatroTopicoSieteComponent },
+    { path: 'actividad', component: ActividadCuatroComponent },
+    { path: 'quiz', component: QuizCuatroComponent }
   ]},
-  { path: 'software-y-licencias', children: [
+  { path: 'software-y-licencias', canActivate: [AutenticacionGuard], children: [
     { path: '', component: UnidadCincoTopicoUnoComponent },
     { path: 'conceptos-del-software', component: UnidadCincoTopicoDosComponent },
     { path: 'software-base', component: UnidadCincoTopicoTresComponent },
     { path: 'software-de-desarrollo', component: UnidadCincoTopicoCuatroComponent },
     { path: 'software-de-aplicacion', component: UnidadCincoTopicoCincoComponent },
     { path: 'software-utilitario', component: UnidadCincoTopicoSeisComponent },
-    { path: 'licencia-de-software', component: UnidadCincoTopicoSieteComponent }
+    { path: 'licencia-de-software', component: UnidadCincoTopicoSieteComponent },
+    { path: 'actividad', component: ActividadCincoComponent },
+    { path: 'quiz', component: QuizCincoComponent }
   ]},
 ];
 

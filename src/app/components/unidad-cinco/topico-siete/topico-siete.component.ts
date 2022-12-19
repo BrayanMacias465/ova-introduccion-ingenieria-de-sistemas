@@ -22,7 +22,7 @@ export class UnidadCincoTopicoSieteComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/software-y-licencias/software-utilitario');
+    this.router.navigateByUrl('/software-y-licencias/actividad');
   }
 
   paginaAnterior(): void {

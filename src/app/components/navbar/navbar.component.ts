@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -14,11 +15,19 @@ export class NavbarComponent {
   @Output() anteriorClick = new EventEmitter();
   @Output() siguienteClick = new EventEmitter();
 
+  constructor( private router: Router ) {}
+
   onClickAnterior(): void{
     this.anteriorClick.emit();
   }
 
   onClickSiguiente(): void{
     this.siguienteClick.emit();
+  }
+
+  logout(): void {
+    localStorage.removeItem('token');
+    localStorage.removeItem('id_usuario');
+    this.router.navigateByUrl('/autenticacion');
   }
 }

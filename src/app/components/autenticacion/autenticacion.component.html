@@ -2,17 +2,17 @@
     <div class="card" style="width: 34rem;">
         <div class="card-body">
             <h5 class="card-title text-center">Inicio de Sesion</h5>
-            <form>
+            <form novalidate (ngSubmit)="onSubmit()" [formGroup]="loginForm">
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="correoInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="correoInput" placeholder="name@example.com" formControlName="email">
                     <label for="correoInput">Correo electrónico</label>
                   </div>
                   <div class="form-floating">
-                    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password" formControlName="password">
                     <label for="passwordInput">Contraseña</label>
                   </div>
                   <div class="container-button d-flex justify-content-center align-content-center">
-                      <button class="btn mt-3">Iniciar Sesion</button>
+                      <button type="submit" class="btn mt-3">Iniciar Sesion</button>
                   </div>
             </form>
         </div>

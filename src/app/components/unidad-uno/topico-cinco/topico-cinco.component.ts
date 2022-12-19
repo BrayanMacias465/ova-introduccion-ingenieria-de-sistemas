@@ -20,7 +20,7 @@ export class UnidadUnoTopicoCincoComponent {
   }
 
   paginaSiguiente(): void {
-    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas');
+    this.router.navigateByUrl('/introduccion-ingieneria-de-sistemas/actividad');
   }
 
   paginaAnterior(): void {

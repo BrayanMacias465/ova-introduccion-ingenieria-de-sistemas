@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -53,6 +54,24 @@ import { UnidadCincoTopicoSeisComponent } from './components/unidad-cinco/topico
 import { UnidadCincoTopicoSieteComponent } from './components/unidad-cinco/topico-siete/topico-siete.component';
 import { UnidadCincoTopicoTresComponent } from './components/unidad-cinco/topico-tres/topico-tres.component';
 import { UnidadCincoTopicoUnoComponent } from './components/unidad-cinco/topico-uno/topico-uno.component';
+import { ActividadUnoComponent } from './components/unidad-uno/actividad/actividad.component';
+import { ActividadDosComponent } from './components/unidad-dos/actividad/actividad.component';
+import { ActividadTresComponent } from './components/unidad-tres/actividad/actividad.component';
+import { ActividadCuatroComponent } from './components/unidad-cuatro/actividad/actividad.component';
+import { ActividadCincoComponent } from './components/unidad-cinco/actividad/actividad.component';
+import { HttpClientModule } from '@angular/common/http';
+import { QuizUnoComponent } from './components/unidad-uno/quiz/quiz.component';
+import { QuizDosComponent } from './components/unidad-dos/quiz/quiz.component';
+import { QuizTresComponent } from './components/unidad-tres/quiz/quiz.component';
+import { QuizCuatroComponent } from './components/unidad-cuatro/quiz/quiz.component';
+import { QuizCincoComponent } from './components/unidad-cinco/quiz/quiz.component';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+
+import { ToastModule } from 'primeng/toast';
+import { ToolbarModule } from 'primeng/toolbar';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -106,11 +125,29 @@ import { UnidadCincoTopicoUnoComponent } from './components/unidad-cinco/topico-
     UnidadCincoTopicoCuatroComponent,
     UnidadCincoTopicoCincoComponent,
     UnidadCincoTopicoSeisComponent,
-    UnidadCincoTopicoSieteComponent
+    UnidadCincoTopicoSieteComponent,
+    ActividadUnoComponent,
+    ActividadDosComponent,
+    ActividadTresComponent,
+    ActividadCuatroComponent,
+    ActividadCincoComponent,
+    QuizUnoComponent,
+    QuizDosComponent,
+    QuizTresComponent,
+    QuizCuatroComponent,
+    QuizCincoComponent,
+    UsuariosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    ToastModule,
+    ToolbarModule,
+    TableModule,
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
